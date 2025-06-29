@@ -1,0 +1,19 @@
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: gray;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px;
+    margin: 50px 0;
+}
+
+.banner {
+    background-image: url("@assets/images/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

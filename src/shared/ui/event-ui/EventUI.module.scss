@@ -1,0 +1,49 @@
+.event {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+}
+
+.content {
+    width: 100%;
+    box-shadow: 0px 0px 8px 3px rgba(255, 255, 255, 1);
+}
+
+.event_name {
+    color: #ffffff;
+    font-family: "goueah-jeremiah-remake", monospace;
+    text-transform: uppercase;
+}
+
+.event_text {
+    color: black;
+    font-family: "goueah-jeremiah-black-italic", monospace;
+    font-size: 22px;
+}
+
+.award_icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    animation: shaking 1s ease-in-out infinite alternate;
+    transform: rotateZ(0deg);
+}
+
+.award_text {
+    font-family: "goueah-jeremiah-black-italic", monospace;
+}
+
+@keyframes shaking {
+    from {
+        transform: rotateZ(-10deg);
+    }
+
+    to {
+        transform: rotateZ(10deg);
+    }
+}
+
+.action {
+    align-self: center;
+}

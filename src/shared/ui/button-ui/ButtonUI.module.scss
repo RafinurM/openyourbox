@@ -1,0 +1,46 @@
+.button {
+    background-color: #8ab1a483;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    font-family: "goueah-jeremiah-black-italic", monospace;
+    font-size: 22px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.6s;
+    box-shadow: 0px 0px 8px 3px wheat;
+    
+    &:hover {
+        background-color: #523131;
+    }
+    
+    &:active {
+        background-color: #b8ac68;
+    }
+
+    &_active {
+        color: wheat;
+        background-color: #523131;
+    }
+}
+
+.buttonText {
+    display: inline;
+    animation: shining 2s ease-in-out infinite alternate;
+}
+
+@keyframes shining {
+    from {
+        color: wheat;
+    }
+
+    35% {
+        color: rgb(170, 117, 17);
+    }
+
+    to {
+        color: black;
+    }
+    
+}

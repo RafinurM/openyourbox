@@ -1,0 +1,18 @@
+.header {
+    max-width: 1200px;
+    // background-color: bisque;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-block-end: 10px solid rgba(177, 162, 162, 0.301);
+}
+
+.title {
+    margin: 0 100px;
+    font-size: 72px;
+    font-family: "goueah-jeremiah-remake", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: wheat;
+}

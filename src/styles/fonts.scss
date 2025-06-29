@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "goueah-jeremiah";
+    src: url("@assets/fonts/goueah-jeremiah/goueah-jeremiah.ttf");
+    src: local("goueah-jeremiah"),
+        url("@assets/fonts/goueah-jeremiah/goueah-jeremiah.ttf") format("truetype");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "goueah-jeremiah-black-italic";
+    src: url("@assets/fonts/goueah-jeremiah/goueah-jeremiah-black-italic.ttf");
+    src: local("goueah-jeremiah-black-italic"),
+    url("@assets/fonts/goueah-jeremiah/goueah-jeremiah-black-italic.ttf") format("truetype");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "goueah-jeremiah-remake";
+    src: url("@assets/fonts/goueah-jeremiah/goueah-jeremiah-remake.ttf");
+    src: local("goueah-jeremiah-remake"),
+        url("@assets/fonts/goueah-jeremiah/goueah-jeremiah-remake.ttf") format("truetype");
+        font-weight: 400;
+        font-display: swap;
+}
