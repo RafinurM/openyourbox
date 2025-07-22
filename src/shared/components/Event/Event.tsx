@@ -1,24 +1,22 @@
-import { useAppStore } from "@/shared/store/AppStore";
+import { useEvents, useItems } from "@/shared/store/AppStore";
 import { EventUI } from "@/shared/ui/event-ui/EventUI";
-import type { TAward } from "@/types";
 import { useParams } from "react-router-dom";
 
 export const Event = () => {
   const { id } = useParams();
-  const { items, events, stats } = useAppStore();
+  const items = useItems();
+  const events = useEvents();
   const item = items.find(item => item.id === id);
-  const event = events.find((e) => e.event === item?.event);
-    if (event) {
-        stats.awards.push(event.award as TAward);
-    }
+  const event = events.find(event => event.event === item?.event);
   return (
     <>
-      <EventUI
-        name={event ? event.name : ""}
-        content={event ? event.content : ""}
-        text={event ? event.text : ""}
-        award={event ? event.award : undefined}
-      />
+    { event ? <EventUI
+        name={event.name}
+        content={event.content}
+        text={event.name}
+        award={event.award}
+      /> : null}
+      
     </>
   );
 };

@@ -1,9 +1,9 @@
 import { v4 as uuidv4 } from "uuid";
-import type { JSX } from "react";
+import { memo, type JSX } from "react";
 import { BoardUI } from "../../ui/board-ui/BoardUI";
 import { Block } from "../Block";
 
-export const Board = () => {
+export const Board = memo(() => {
   const BLOCK_COUNT: number = 99;
   const blocks: JSX.Element[] = [];
 
@@ -11,4 +11,4 @@ export const Board = () => {
     blocks.push(<Block key={uuidv4()} />);
   }
   return <BoardUI>{blocks}</BoardUI>;
-};
+});

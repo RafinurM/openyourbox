@@ -18,7 +18,7 @@ export const StatsUI = ({ lucky, score, Icons }: TStatsUIProps) => {
         <p className={clsx(style.stateName, style.stateName_time)}>
           Time: 
         </p>
-        <div className={clsx(style.stateName, style.stateName_awards)}>
+        <div className={clsx(style.stateName, style.stateName_awards, style.awards)}>
           {Icons ? Icons.map(Icon => <TooltipUI text={'asd'} customClass={style.toolTip} key={uuidv4()}><Icon className={style.award} key={uuidv4()}/></TooltipUI>) : ''}
         </div>
       </div>

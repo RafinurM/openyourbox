@@ -1,8 +1,8 @@
-import { useAppStore } from "@/shared/store/AppStore";
+import { useStats } from "@/shared/store/AppStore";
 import { StatsUI } from "@/shared/ui/stats-ui/StatsUI";
 
 export const Stats = () => {
-  const { stats } = useAppStore();
+  const stats = useStats();
   const awards = stats.awards.map((award) => award.Icon);
   return (
     <StatsUI

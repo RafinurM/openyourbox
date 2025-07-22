@@ -3,10 +3,10 @@ import style from "./EventUI.module.scss";
 import { Button } from "@/shared/components/Button";
 
 type TEventUIProps = {
-  name?: string | undefined;
-  content?: string | undefined;
-  text?: string | undefined;
-  award?: TAward | undefined;
+  name?: string;
+  content?: string;
+  text?: string;
+  award?: TAward;
 };
 
 export const EventUI = ({ name, content, text, award }: TEventUIProps) => {

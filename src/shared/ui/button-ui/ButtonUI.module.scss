@@ -10,11 +10,11 @@
     cursor: pointer;
     transition: all 0.6s;
     box-shadow: 0px 0px 8px 3px wheat;
-    
+
     &:hover {
         background-color: #523131;
     }
-    
+
     &:active {
         background-color: #b8ac68;
     }
@@ -25,9 +25,13 @@
     }
 }
 
+.any {
+    font-size: 67px;
+}
+
 .buttonText {
     display: inline;
-    animation: shining 2s ease-in-out infinite alternate;
+    animation: shining 7s ease-in-out infinite alternate;
 }
 
 @keyframes shining {
@@ -42,5 +46,5 @@
     to {
         color: black;
     }
-    
+
 }

@@ -8,7 +8,7 @@ type TBoardUIProps = {
 }
 export const BoardUI = ({children}: TBoardUIProps) => {
   useEffect(() => {
-    setTimeout(() => {}, 1000)
+
   }, [])
   return <section className={clsx(style.banner, style.board)}>{children}</section>;
 };

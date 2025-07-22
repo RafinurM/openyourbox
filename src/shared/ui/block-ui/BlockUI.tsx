@@ -1,18 +1,19 @@
 import clsx from "clsx";
 import style from "./BlockUI.module.scss"
-import type React from "react";
+import type { TItem } from "@/types";
+import { URL } from "@/api/openyourbox-api";
 
 type ButtonUIProps = {
-    Icon: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
-    action: () => void;
+    item: TItem;
+    action: (id: string) => void;
     isOpen: boolean;
 }
 
-export const BlockUI = ({ Icon, action, isOpen}: ButtonUIProps) => {
+export const BlockUI = ({ item, action, isOpen}: ButtonUIProps) => {
   return (
     <div className={clsx(style.block, !isOpen && style.block_active)} onClick={action}>
       <div className={style.content}>
-        {isOpen ? <Icon className={clsx(style.icon)}/> : ''}
+        {isOpen ? <img className={clsx(style.icon)} src={URL + `${item.icon}`} alt={`${item.name}`}/> : null}
       </div>
     </div>
   );

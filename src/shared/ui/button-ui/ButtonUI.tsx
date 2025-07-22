@@ -11,7 +11,7 @@ export const ButtonUI = ({ name, action, className }: TButtonUIProps) => {
   return (
     <button
       onClick={action}
-      className={clsx(action && style.button_active, style.button, className)}
+      className={clsx(style.button, className)}
     >
       <p className={style.buttonText}>{name}</p>
     </button>

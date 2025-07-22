@@ -1,22 +1,22 @@
 .container {
   position: relative;
   display: flex;
+  flex-direction: row;
 }
 
 .tooltip {
   position: absolute;
-  width: 300px;
-  height: 200px;
+  width: 100px;
+  height: 50px;
   left: 60px;
   padding: 4px 12px;
   justify-content: center;
   color: #FFFFFF;
-  background-color: #c4a37ca9;
+  background-color: #c4a37c;
   border-radius: 12px ;
   text-align: center;
   white-space: pre-line;
-  font-weight: 400 ;
+  font-weight: 400;
   pointer-events: none;
   transition: all   0.7s;
-  
 }
